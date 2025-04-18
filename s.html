@@ -1,0 +1,38 @@
+```
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Surprise!</title>
+  <style>
+    .chest {
+      width: 200px;
+      height: 200px;
+      background-color: #964B00;
+      border: 10px solid #786C3B;
+      border-radius: 20px;
+      cursor: pointer;
+      text-align: center;
+      padding-top: 80px;
+      font-size: 24px;
+      font-weight: bold;
+      color: #fff;
+    }
+    
+    .open {
+      background-color: #F7DC6F;
+      border-color: #F2C464;
+    }
+  </style>
+</head>
+<body>
+  <div class="chest" onclick="openChest()">Click me!</div>
+  
+  <script>
+    function openChest() {
+      document.querySelector('.chest').classList.add('open');
+      document.querySelector('.chest').innerHTML = 'You found treasure! <br> The cake is a lie... but the message is real!';
+    }
+  </script>
+</body>
+</html>
+```
